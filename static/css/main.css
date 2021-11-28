@@ -153,6 +153,9 @@ div.col-sm-3 div.profile-about {
 .content img {
   max-width: 100%
 }
+.index-title{
+  padding-left:13px;
+}
 
 /* Responsive Conditional */
 @media (min-width: 1024px) {
