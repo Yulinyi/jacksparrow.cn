@@ -17,7 +17,6 @@
 * Next & Previous Post
 * Disqus comment
 * Projects page & Detail Project page
-* Share on social media
 * Google analytics
 * HTML Minify _(Compress HTML)_ using [Jekyll Compress HTML](https://github.com/penibelst/jekyll-compress-html)
 

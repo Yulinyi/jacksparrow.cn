@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "中文Add reCAPTCHA to default Django admin login form"
+title:  "Add reCAPTCHA to default Django admin login form"
 date:   2021-10-06 20:41:00 +0700
 categories: [python, django, security]
 ---
@@ -58,7 +58,6 @@ Then in your `myproject/urls.py`;
 ```python
 from django.contrib import admin
 from django.urls import include, path
-
 from myapp.forms import AuthAdminForm
 
 # modify the default admin login form
@@ -72,7 +71,3 @@ urlpatterns = [
     ...
 ]
 ```
-
-Also don't miss to add the captcha field into template `templates/account/admin/login.html`;
-
-<iframe width="100%" height="400" src="//jsfiddle.net/agaust/ja21bugn/2/embedded/html/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
