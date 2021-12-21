@@ -1,9 +1,7 @@
 ---
 layout: page
-title: About
+title: 关于本站
 permalink: /about/
 ---
 
-I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django. Now, I am doing more on backend.
-
-email: agus[at]python.web.id
+重庆人，不高傲，低调做人；

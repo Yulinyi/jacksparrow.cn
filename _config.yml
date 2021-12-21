@@ -1,8 +1,8 @@
-title:  记录我的随心所享
+title:  余林翼
 description: My Personal Stack Problems
 author: Jacksparrów
 github: https://jacksparrow.cn
-about: I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
+about: 美丽的姑娘！
 disqus_shortname: stackproblems
 google_analytics: UA-XXXXXXXX-Y
 
@@ -29,8 +29,8 @@ social:
 urls:
     - text: About Me
       url: /about/
-    - text: My Projects
-      url: /projects/
+    # - text: My Projects
+      # url: /projects/
     # - text: XML Feed
     #   url: /feed.xml
 
