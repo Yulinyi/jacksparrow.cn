@@ -1,5 +1,5 @@
 ---
-title: '启用Github'
+title: 'Github'
 frontpage: 'true'
 ---
    
