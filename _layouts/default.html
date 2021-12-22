@@ -11,58 +11,45 @@ layout: compress
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.author }}{% endif %}</title>
     <meta name="author" content="{{ site.author }}" />
     <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
-    <!-- <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" /> -->
-    <!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml"> -->
     <meta content="{{ site.title }}" property="og:site_name">
-    <!-- Font awesome icons -->
-    <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> -->
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css" rel="stylesheet">
-    <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="/static/css/syntax.css">
-    <!-- Bootstrap core CSS -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Fonts -->
-    <!-- Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/super-search.css">
     <link rel="stylesheet" href="/static/css/thickbox.css">
     <link rel="stylesheet" href="/static/css/projects.css">
     <link rel="stylesheet" href="/static/css/main.css">
 
     {% if jekyll.environment == "production" %}
-      <!-- Google Analytics -->
-      <!-- <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script> -->
     {% endif %}
   </head>
-  <body>
-    <div class="container">
-      <div class="col-sm-3">
+  <body class="w-100 h-100 p-3">
+    <div class="container-flush">
+      <div class="row">
+      <div class="col-2">
         <div class="fixed-condition">
-          <h1 class="author-name"><a href="/">{{ site.author }}</a></h1>
+          <h1 class="author-name fs-2"><a href="/">{{ site.author }}</a></h1>
           {% if site.about %}
-            <div class="profile-about">
+            <div class="profile-about p-1">
               {{ site.about }}
             </div>
           {% endif %}
           <div class="social">
             <ul>
-                <li style="font-size:16pt;"><i class="fa fa-globe-americas "></i></a></li>
-                <li><i class="fa fas-twitter"></i></li>
+                <li style="font-size:16pt;"><i class="fa fa-piggy-bank"></i></a></li>
+                <li style="font-size:16pt;"><i class="fa fa-crow"></i></a></li>
+                <li style="font-size:16pt;"><i class="fa fa-compass"></i></a></li>
+                <li style="font-size:16pt;"><i class="fa fa-dog"></i></a></li>
+                <li style="font-size:16pt;"><i class="fa fa-hippo "></i></a></li>
+                <li style="font-size:16pt;"><i class="fa fa-democrat"></i></a></li>
             </ul>
           </div>
           <div class="search" id="js-search">
-            <input type="text" placeholder="type to search" class="search__input form-control" id="js-search__input">
+            <input type="text" placeholder="-" class="search__input form-control" id="js-search__input">
             <ul class="search__results" id="js-search__results"></ul>
           </div>
           <hr />
-          <ul class="sidebar-nav">
+          <ul class="sidebar-nav lh-lg">
             <strong>Navigation</strong>
             <li><a href="/">Home</a></li>
             {% for i in site.urls %}
@@ -70,25 +57,25 @@ layout: compress
             {% endfor %}
           </ul>
         </div>
-        <!-- end /.fixed-condition -->
       </div>
-      <div class="col-sm-8 col-offset-1 main-layout">
-        {{ content }}
-        <footer>
-          &copy; {{ site.author }}{% if site.github %}
-            - <a href="{{ site.github }}">{{ site.github }}</a> - Powered by Jekyll.
-          {% endif %}
-        </footer>
+      <div class="col">
+        <div class="row">
+          {{ content }}
+        </div>
+        <div class="row">
+          <footer class="fs-6">
+            &copy; {{ site.author }}{% if site.github %}
+            - <a href="{{ site.github }}">{{ site.github }}</a> - Powered by Jekyllrb.
+            {% endif %}
+          </footer>
+        </div>
       </div>
-      <!-- end /.col-sm-8 -->
     </div>
-    <!-- end /.container -->
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    </div>
+
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="/static/js/super-search.js"></script>
     <script src="/static/js/thickbox-compressed.js"></script>
     <script src="/static/js/projects.js"></script>
