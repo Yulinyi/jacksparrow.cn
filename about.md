@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Jacksparrów
+title: About
 permalink: /about/
 date: 2009-01-04
 ---
