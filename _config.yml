@@ -36,8 +36,8 @@ urls:
 
 url: "https://jacksparrow.cn"
 baseurl: ""
-paginate: 30
-per_page: 50
+paginate: 300
+per_page: 300
 paginate_path: "/page/:num/"
 markdown: kramdown
 gems:

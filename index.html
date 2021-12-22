@@ -6,11 +6,12 @@ layout: default
   <!-- <h1 style="padding-left:13px;">{{ site.title }}</h1> -->
   <!-- <hr /> -->
 
-  <ol class="posts">
+  <ol class="posts pe-2">
     {% for post in paginator.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a> <i><span class="float-end" style="font-size:9pt;">{{ post.date | date:"%Y-%m-%d" }}</span></i></li>
     {% endfor %}
   </ol>
+  <!-- &raquo; -->
 
   <!-- Pagination links -->
   {% if paginator.total_pages > 1 %}
