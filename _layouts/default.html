@@ -26,7 +26,7 @@ layout: compress
   <body class="w-100 h-100 p-3">
     <div class="container-flush">
       <div class="row">
-      <div class="col-2">
+      <div class="col-sm-2 mb-2">
         <div class="fixed-condition">
           <h1 class="author-name fs-2"><a href="/">{{ site.author }}</a></h1>
           {% if site.about %}
@@ -48,21 +48,22 @@ layout: compress
             <input type="text" placeholder="-" class="search__input form-control" id="js-search__input">
             <ul class="search__results" id="js-search__results"></ul>
           </div>
-          <hr />
+          <hr class="p-0 m-0">
           <ul class="sidebar-nav lh-lg">
-            <strong>Navigation</strong>
+            <!-- <strong>Navigation</strong> -->
             <li><a href="/">Home</a></li>
             {% for i in site.urls %}
               <li><a class="about" href="{{ i.url }}">{{ i.text }}</a></li>
             {% endfor %}
           </ul>
         </div>
+        <hr class="p-0 m-0">
       </div>
-      <div class="col">
+      <div class="col p-0">
         <div class="row">
           {{ content }}
         </div>
-        <div class="row">
+        <div class="row p-1">
           <footer class="fs-6">
             &copy; {{ site.author }}{% if site.github %}
             - <a href="{{ site.github }}">{{ site.github }}</a> - Powered by Jekyllrb.
