@@ -6,7 +6,7 @@ layout: default
   <!-- <h1 style="padding-left:13px;">{{ site.title }}</h1> -->
   <!-- <hr /> -->
 
-  <ol class="posts pe-2">
+  <ol class="posts ms-1 pe-2">
     {% for post in paginator.posts %}
       <li><a href="{{ post.url }}">{{ post.title }}</a> <i><span class="float-end" style="font-size:9pt;">{{ post.date | date:"%Y-%m-%d" }}</span></i></li>
     {% endfor %}
