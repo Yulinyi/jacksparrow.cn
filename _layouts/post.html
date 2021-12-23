@@ -47,13 +47,13 @@ layout: default
 <div class="PageNavigation w-100 ps-4 pe-4">
   {% if page.next.url %}
   <a class="prev" href="{{ page.next.url }}">
-    <i class="fas fa-backward"></i>
+    <i class="fas fa-backward"></i>&nbsp;Prev
   </a>
   <!-- &laquo; {{ page.next.title }} -->
   {% endif %}
   {% if page.previous.url %}
     <a class="next float-end" href="{{ page.previous.url }}">      
-      <i class="fas fa-forward"></i>
+      <i class="fas fa-forward"></i>&nbsp;Next
     </a>
     <!-- {{ page.previous.title }} &raquo; -->
   {% endif %}

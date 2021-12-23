@@ -16,8 +16,13 @@ hr {
 span.time, span.categories {
   color: #ADADAD;
   margin-bottom: 5px;
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
+}
+span.author {
+  /* float: right !important; */
+  margin-right:1rem !important;
+  font-style: italic;
 }
 h1, h2, h3 {
   color: #696969;
