@@ -33,6 +33,43 @@ urls:
       # url: /projects/
     # - text: XML Feed
     #   url: /feed.xml
+playlist:
+    - author: 王力宏
+      menus: [星座,在那遥远的地方,Julia,唯一,心中的日月,火力全开,摇滚怎么了!,改变自己,Flow,竹林深处,爱你等于爱自己,一首简单的歌]
+    - author: 李荣浩
+      menus: [爱就爱了,小芳,模特,李白,麻雀,老街]
+    - author: 谭咏麟
+      menus: [笑看人生,爱情陷阱,再见亦是泪,卡拉永远OK,讲不出再见]
+    - author: 刘德华
+      menus: [踢出个未来,世界第一等,暗里着迷]
+    - author: 杜德伟
+      menus: [让爱那么愉快]
+    - author: 动力火车
+      menus: [忠孝东路走九遍,无情的情书,艾琳娜,再会吧我的心上人!]
+    - author: 谢天笑
+      menus: [幻觉,不会改变,潮起潮落什么都不为]
+    - author: 方大同
+      menus: [小芳,Flow]
+    - author: 林忆莲
+      menus: []
+    - author: Lacrimosa
+      menus: []
+    - author: Britney Spears
+      menus: []
+    - author: Santiano
+      menus: []
+    - author: Alan Walker
+      menus: []
+    - author: The Hu
+      menus: []
+    - author: 九宝乐队
+      menus: []
+    - author: Rammsteim
+      menus: []
+    - author: Enrique Iglesias
+      menus: []
+    - author: 更多
+      menus: []
 
 url: "https://jacksparrow.cn"
 baseurl: ""
