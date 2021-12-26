@@ -8,7 +8,7 @@ layout: default
         <h1 class="post-title" style="color:#51a33d !important;">{{ post.title }}</h1>
       </header>
       
-      <span class="time ps-3">{{ post.date | date:"%Y-%m-%d" }}&nbsp;<span class="fs-6">&raquo;</span></span>
+      <span class="time ps-3">{{ post.date | date:"%Y-%m-%d %A" }}&nbsp;<span class="fs-6">&raquo;</span></span>
     <!-- <li><a href="{{ post.url }}">{{ post.title }}</a> <i><span class="float-end" style="font-size:9pt;">{{ post.date | date:"%Y-%m-%d" }}</span></i></li> -->
     <div class="post p-3 pt-0 mt-1">{{ post.content }}</div>
     <div class="PageNavigation w-100 ps-4 pe-4">
